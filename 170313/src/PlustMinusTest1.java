@@ -1,21 +1,11 @@
-class PlusMinus {
-	int plus, minus;
-
-	public String plus(int x, int y) {
-		plus = x + y;
-		return "二つの数の合は " + plus;
-	}
-
-	public String minus(int x, int y) {
-		minus = x - y;
-		return "二つの数の差は" + minus;
-	}
-}
-
 public class PlustMinusTest1 {
 	public static void main(String[] args) {
-		PlusMinus pm = new PlusMinus();
+		PlusMinus obj1 = new PlusMinus();
+		String sum, minus;
+		sum = obj1.plus(50, 30);
+		minus = obj1.minus(50, 30);
 		
-		System.out.println(pm.plus(3,4));
+		System.out.println(sum);
+		System.out.println(minus);
 	}
 }

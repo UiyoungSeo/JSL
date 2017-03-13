@@ -13,9 +13,7 @@ class People {
 		System.out.println("あなたの名前は：" + name + "様");
 		System.out.println("あなたの年は：" + age + "歳");
 		System.out.println("あなたの背は：" + height + "ｃｍ");
-		System.out.println("───────────────────────────────");
 	}
-
 }
 
 public class Ex01 {
