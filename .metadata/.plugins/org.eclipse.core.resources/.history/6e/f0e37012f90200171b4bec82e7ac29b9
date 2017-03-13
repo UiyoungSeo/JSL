@@ -1,0 +1,15 @@
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+
+		int price = 24;	//24달러를 복리8%
+		double result = 0; 
+		
+		for (int i = 1648; i <= 2017; i++) {
+			result = price + price*0.08;
+		}
+		System.out.println(result);
+	}
+
+}

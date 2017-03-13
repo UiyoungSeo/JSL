@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+//selection sort renshu2
+public class Ex06 {
+
+	public static void main(String[] args) {
+		int[] num = {8,3,5,7,15,1};
+		
+		int min, temp;
+		
+		for (int i = 0; i < num.length-1; i++) {
+			min = i;
+			
+			for (int j = i+1; j < num.length; j++) {
+				if(num[j]<num[min]) 
+					min = j;
+				
+			}
+			temp = num[i];
+			num[i] = num[min];
+			num[min] = temp;
+		}
+		System.out.println(Arrays.toString(num));
+	}
+	
+	
+} 

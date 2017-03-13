@@ -1,0 +1,19 @@
+
+public class Exercise4_10 {
+
+	public static void main(String[] args) {
+		int num = 12345;
+		int sum = 0;
+
+		int man = num / 10000;
+		int chun = num % 10000 / 1000;
+		int bak = num % 1000 / 100;
+		int ten = num % 100 / 10;
+		int il = num % 10;
+
+		int sum = man + chun + bak + ten + il;
+		
+	System.out.println(sum);
+	}
+
+}

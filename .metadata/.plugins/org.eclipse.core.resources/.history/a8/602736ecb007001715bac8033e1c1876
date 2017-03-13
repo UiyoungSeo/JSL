@@ -1,0 +1,19 @@
+public class Goods {
+	String name;
+	int price;
+	int sold;	//팔린 갯수
+
+	public static void main(String[] args) {
+		Goods tv = new Goods();
+		tv.name = "LG tv";
+		tv.price = 500000;
+		tv.sold = 10;
+		
+		Goods camera = new Goods();
+		camera.name = "nikon";
+		camera.price = 450000;
+		camera.sold = 5;
+				
+	}
+
+}

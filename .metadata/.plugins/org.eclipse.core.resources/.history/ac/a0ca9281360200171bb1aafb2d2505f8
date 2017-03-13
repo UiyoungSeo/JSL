@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+
+		int num = (int) (Math.random() * 100 + 1);
+		int input;
+		int start = 1, end = 100;
+
+		do {
+			Scanner sc = new Scanner(System.in);
+			System.out.print("input 1 to 100 >>");
+			input = sc.nextInt();
+			
+			if (input < num) {
+				System.out.println("more than " + input);
+				start = input;
+			} else if (input > num) {
+				System.out.println("less than " + input);
+				end = input;
+			}
+			System.out.println(start + "~" + end);
+
+		} while (input != num);
+		
+		System.out.println("you got it!");
+	}
+
+}

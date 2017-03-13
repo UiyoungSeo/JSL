@@ -1,0 +1,48 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
+
+public class Ex07_2 {
+
+	public static void main(String[] args) {
+
+		while (true) {
+
+			Random r = new Random();
+			int num = r.nextInt(100);
+			int min = 0, max = 99;
+			int count = 1;
+			Scanner sc = new Scanner(System.in);
+			System.out.println("input 0~99");
+			System.out.println(num);
+
+			while (true) {
+				System.out.print(count + ">>");
+				int input = sc.nextInt();
+
+				if (input < min || input > max)
+					System.out.println("out of range");
+				else {
+					if (input == num) {
+						System.out.println("you got it");
+						System.out.println("play again? (y/n)");
+						if (sc.next() == "n")
+							break;
+
+					} else if (input < num) {
+						System.out.println("more than " + input);
+						min = input;
+					} else if (input > num) {
+						System.out.println("less than " + input);
+						max = input;
+					}
+
+					System.out.println(min + "~" + max);
+					count++;
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Exercise3_10 {
+
+	public static void main(String[] args) {
+		char ch = 'B';
+		
+		System.out.println((char)(ch+32));
+	}
+
+}

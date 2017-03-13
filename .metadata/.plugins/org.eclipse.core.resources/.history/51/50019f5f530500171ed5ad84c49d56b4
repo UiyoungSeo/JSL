@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("사전에 등록할 단어의 갯수를 입력해주세요 >> ");
+		int size = sc.nextInt();
+
+		String[] eng = new String[size];
+		String[] kor = new String[size];
+
+		for (int i = 0; i < args.length; i++) {
+			System.out.print(i + "번쨰 사전에 입력할 영단어와 뜻을 입력해 주세요(종료:exit) >>");
+			eng[i] = sc.next();
+			kor[i] = sc.next();
+		}
+	}
+
+}
