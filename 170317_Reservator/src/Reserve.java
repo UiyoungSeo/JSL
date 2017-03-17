@@ -13,7 +13,7 @@ public class Reserve {
 
 		while (choice != 5) {
 			int type;
-			System.out.print("予約(1), 예약상황조회(2), よやくしゃ(3) 예약취소(4), 끝내기(5) >>");
+			System.out.print("予約(1), 예약상황조회(2), 예약자검색(3) 예약취소(4), 끝내기(5) >>");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -45,7 +45,6 @@ public class Reserve {
 
 				if (i == aSeatType.length)
 					System.out.println(name + "님을 찾을 수 없습니다.");
-
 				break;
 
 			case 4:

@@ -66,8 +66,7 @@ public class SeatType {
 	}
 
 	public boolean search(String name) {
-		int i = 0;
-		for (i = 0; i < aSeat.length; i++) {
+		for (int i = 0; i < aSeat.length; i++) {
 			if (name.equals(aSeat[i].getName())) {
 				System.out.println(name + "님은 " + type + "석의 " + (i + 1) + "번째 좌석에 예약이 되어있습니다.");
 				return true;
