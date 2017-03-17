@@ -10,9 +10,10 @@ class Calculator {
 		x = _x;
 		y = _y;
 		operator = _operator;
+		operate();
 	}
 
-	public double getResult() {
+	private void operate() {
 		switch (operator) {
 		case "+":
 			result = x + y;
@@ -31,7 +32,9 @@ class Calculator {
 			System.out.println("잘못된 입력");
 			break;
 		}
+	}
 
+	public double getResult() {
 		return result;
 	}
 }
