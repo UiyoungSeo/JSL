@@ -1,18 +1,12 @@
 package phonebook.answer;
 
 public class PhoneInfo {
-	String name, phoneNumber, birthDate;
+	private String name, phoneNumber, birthDate;
 
 	public PhoneInfo(String _name, String _phoneNumber, String _birthDate) {
 		name = _name;
 		phoneNumber = _phoneNumber;
 		birthDate = _birthDate;
-	}
-	
-	public PhoneInfo(String _name, String _phoneNumber){
-		name = _name;
-		phoneNumber = _phoneNumber;
-		birthDate = null;
 	}
 
 	public void showPhoneInfo() {
