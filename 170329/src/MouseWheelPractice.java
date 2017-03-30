@@ -42,7 +42,6 @@ class MouseWheelFrame extends JFrame {
 		});
 		add(label);
 		setVisible(true);
-		
 	}
 }
 

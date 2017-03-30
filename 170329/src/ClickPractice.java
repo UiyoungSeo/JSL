@@ -15,7 +15,7 @@ class ClickPracticeFrame extends JFrame {
 		JLabel label = new JLabel("rat");
 		label.setLocation(100, 100);
 		label.setSize(50, 20);
-		label.addMouseListener(new MouseAdapter() {			//anonymous class 
+		label.addMouseListener(new MouseAdapter() { // anonymous class
 			public void mousePressed(MouseEvent e) {
 				JLabel la = (JLabel) e.getSource();
 				Container c = la.getParent();
