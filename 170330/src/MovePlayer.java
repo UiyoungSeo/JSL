@@ -64,8 +64,8 @@ class MyPanel4 extends JPanel {
 	}
 }
 
-public class MoveCharacter extends JFrame {
-	public MoveCharacter() {
+public class MovePlayer extends JFrame {
+	public MovePlayer() {
 		super("move zelda");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
@@ -76,6 +76,6 @@ public class MoveCharacter extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		new MoveCharacter();
+		new MovePlayer();
 	}
 }
