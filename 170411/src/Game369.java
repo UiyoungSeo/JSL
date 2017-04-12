@@ -54,7 +54,6 @@ class Display {
 					
 					if(clickNumber == 3|| clickNumber == 6||clickNumber == 9)
 						System.out.println("yeah!");
-					
 				}
 				
 				@Override
