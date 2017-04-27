@@ -1,0 +1,8 @@
+/*score table*/
+CREATE TABLE score(
+NAME VARCHAR(10) NOT NULL,
+kor INT(3) NOT NULL, /*100점이 만점이므로 */
+eng INT(3) NOT NULL,
+math INT(3) NOT NULL,
+tot INT(3) NOT NULL,
+AVG INT(3) NOT NULL);
