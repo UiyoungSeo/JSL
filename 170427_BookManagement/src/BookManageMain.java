@@ -66,6 +66,11 @@ public class BookManageMain extends BFrame implements ActionListener {
 		String button = e.getActionCommand();
 		if(button.equals(btn1.getText())){
 			new RentBook();
+		}else if(button.equals(btn2.getText())){
+			//TODO : 회원등록/삭제
+		}
+		else if(button.equals(btn3.getText())){
+			new InsertBook();
 		}
 	}
 	
