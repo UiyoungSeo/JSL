@@ -1,5 +1,5 @@
 //DTO 역할
-public class BKBean {
+public class BookBean {
 	private String lib_name;
 	private String lib_publisher;
 	private String lib_price;

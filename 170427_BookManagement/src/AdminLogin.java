@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Admin_Login extends BFrame implements ActionListener {
+public class AdminLogin extends BFrame implements ActionListener {
 	ImageIcon img = new ImageIcon("admin.jpg");
 	JLabel lblImgage = new JLabel(img);
 	JPanel cpan = new JPanel();
@@ -35,7 +35,7 @@ public class Admin_Login extends BFrame implements ActionListener {
 	ArrayList<AdminBean> list;
 	AdminBean bean;
 
-	public Admin_Login() {
+	public AdminLogin() {
 		setTitle("Book Management");
 		list = mgr.login();
 		init();
@@ -62,7 +62,7 @@ public class Admin_Login extends BFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new Admin_Login();
+		new AdminLogin();
 	}
 
 	@Override

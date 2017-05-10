@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 
-public class InputBook extends BFrame implements ActionListener {
+public class RegistBook extends BFrame implements ActionListener {
 	JPanel titlePanel = new JPanel();
 	JLabel lbl = new JLabel("도서등록");
 	JLabel lbl1 = new JLabel("도서번호");
@@ -34,9 +34,9 @@ public class InputBook extends BFrame implements ActionListener {
 	JButton btnConfirm = new JButton("확인");
 	JButton btnCancel = new JButton("취소");
 	DBMgr mgr = new DBMgr();
-	ArrayList<BKBean> list;
+	ArrayList<BookBean> list;
 
-	public InputBook() {
+	public RegistBook() {
 		setTitle("도서등록");
 		init();
 	}
@@ -89,6 +89,6 @@ public class InputBook extends BFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new InputBook();
+		new RegistBook();
 	}
 }

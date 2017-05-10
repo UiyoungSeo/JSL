@@ -59,11 +59,11 @@ public class DBMgr {
 		return list;
 	}
 
-	public ArrayList<BKBean> allBk() {
+	public ArrayList<BookBean> allBk() {
 		Connection con = null; // 내 pc의 db에 접속
 		Statement stmt = null; // db에 sqldmㄹ 적을 수 있는 판을 만든다.
 		ResultSet rs = null; // sql한 결과를 담는 그릇을 만든다.
-		ArrayList<BKBean> list = new ArrayList<>();
+		ArrayList<BookBean> list = new ArrayList<>();
 		String sql = "SELECT * FROM lib";
 
 		try {
@@ -71,7 +71,7 @@ public class DBMgr {
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				BKBean bean = new BKBean();
+				BookBean bean = new BookBean();
 				bean.setLib_name(rs.getString(1));
 				bean.setLib_code(rs.getString(2));
 				bean.setLib_price(rs.getString(3));
@@ -94,11 +94,11 @@ public class DBMgr {
 		return list;
 	}
 
-	public ArrayList<BKBean> insertBk(String code, String title, String price, String author, String publisher,
+	public ArrayList<BookBean> insertBk(String code, String title, String price, String author, String publisher,
 			String state) {
 		Connection con = null; // 내 pc의 db에 접속
 		PreparedStatement pstmt = null;
-		ArrayList<BKBean> list = new ArrayList<>();
+		ArrayList<BookBean> list = new ArrayList<>();
 		String sql = "INSERT INTO lib values(?,?,?,?,?,?)";
 
 		try {
@@ -124,11 +124,11 @@ public class DBMgr {
 		return list;
 	}
 
-	public ArrayList<BKBean> searchBk(String title) {
+	public ArrayList<BookBean> searchBk(String title) {
 		Connection con = null; // 내 pc의 db에 접속
 		Statement stmt = null; // db에 sql을 적을 수 있는 판을 만든다.
 		ResultSet rs = null; // sql 한 결과를 담는 그릇을 만든다.
-		ArrayList<BKBean> list = new ArrayList<>();
+		ArrayList<BookBean> list = new ArrayList<>();
 		String sql = "SELECT * FROM lib WHERE lib_name = '" + title + "'";
 
 		try {
@@ -136,7 +136,7 @@ public class DBMgr {
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				BKBean bean = new BKBean();
+				BookBean bean = new BookBean();
 				bean.setLib_name(rs.getString(1));
 				bean.setLib_code(rs.getString(2));
 				bean.setLib_price(rs.getString(3));
@@ -160,11 +160,11 @@ public class DBMgr {
 		return list;
 	}
 
-	public ArrayList<BKBean> searchBookByCode(String code) {
+	public ArrayList<BookBean> searchBookByCode(String code) {
 		Connection con = null;
 		Statement stmt = null;
 		ResultSet rs = null;
-		ArrayList<BKBean> list = new ArrayList<>();
+		ArrayList<BookBean> list = new ArrayList<>();
 		String sql = "SELECT * FROM lib WHERE lib_code ='" + code + "'";
 
 		try {
@@ -172,7 +172,7 @@ public class DBMgr {
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				BKBean bean = new BKBean();
+				BookBean bean = new BookBean();
 				bean.setLib_name(rs.getString(1));
 				bean.setLib_code(rs.getString(2));
 				bean.setLib_price(rs.getString(3));
@@ -244,6 +244,9 @@ public class DBMgr {
 		}
 	}
 
+	
+	/* member DAO */ 
+	
 	public ArrayList<MemberBean> allMember() {
 		Connection con = null; // 내 pc의 db에 접속
 		Statement stmt = null; // db에 sqld을 적을 수 있는 판을 만든다.

@@ -11,7 +11,7 @@ import javax.swing.JTable;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 
-public class InsertBook extends BFrame implements ActionListener {
+public class MangeBook extends BFrame implements ActionListener {
 	JPanel btnPanel = new JPanel();
 	JButton btn = new JButton("등록");
 	JButton btn1 = new JButton("검색");
@@ -26,17 +26,17 @@ public class InsertBook extends BFrame implements ActionListener {
 
 	String[] col = { "제목", "도서번호", "가격", "저자", "출판사", "대출여부" };
 	DBMgr mgr = new DBMgr();// DAO
-	ArrayList<BKBean> list;
-	BKBean bean;
+	ArrayList<BookBean> list;
+	BookBean bean;
 
-	public InsertBook() {
+	public MangeBook() {
 		setTitle("도서 입고/폐기");
 		list = mgr.allBk();
 		init();
 	}
 
 	// 생성자 overloading
-	public InsertBook(ArrayList<BKBean> list) {
+	public MangeBook(ArrayList<BookBean> list) {
 		setTitle("도서 입고/폐기");
 		this.list = list;
 		init();
@@ -83,7 +83,7 @@ public class InsertBook extends BFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("등록")) {
-			new InputBook();
+			new RegistBook();
 		} else if (e.getActionCommand().equals("검색")) {
 			new SearchBook();
 		} else if (e.getActionCommand().equals("수정")) {
@@ -93,13 +93,13 @@ public class InsertBook extends BFrame implements ActionListener {
 		} else if (e.getActionCommand().equals("새로고침")) {
 			// dispose한후 다시 켠다.
 			dispose();
-			new InsertBook();
+			new MangeBook();
 		} else if (e.getActionCommand().equals("돌아가기")) {
 			dispose();
 		}
 	}
 
 	public static void main(String[] args) {
-		new InsertBook();
+		new MangeBook();
 	}
 }

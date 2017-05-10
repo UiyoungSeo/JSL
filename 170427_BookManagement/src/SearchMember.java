@@ -19,7 +19,7 @@ public class SearchMember extends BFrame implements ActionListener {
 	JTextField tf = new JTextField(10);
 	JPanel southPanel = new JPanel();
 	JButton btnSearch = new JButton("검색");
-	JButton btnCancel = new JButton("취소");
+	JButton btnCancel = new JButton("돌아가기");
 	
 	DBMgr mgr = new DBMgr();
 	ArrayList<MemberBean> list;
@@ -56,7 +56,7 @@ public class SearchMember extends BFrame implements ActionListener {
 			System.out.println(name);
 			list = mgr.searchMember(name);
 			new ManageMember(list);
-		} else if (e.getActionCommand().equals("취소")) {
+		} else if (e.getActionCommand().equals("돌아가기")) {
 			tf.setText("");
 			dispose();
 		}

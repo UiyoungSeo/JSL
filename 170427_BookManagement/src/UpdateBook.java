@@ -40,7 +40,7 @@ public class UpdateBook extends BFrame implements ActionListener {
 	JScrollPane scrollPane;
 
 	DBMgr mgr = new DBMgr();
-	ArrayList<BKBean> list;
+	ArrayList<BookBean> list;
 
 	public UpdateBook() {
 		setTitle("도서정보 수정 페이지");

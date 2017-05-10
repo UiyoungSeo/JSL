@@ -20,8 +20,8 @@ public class RentBook extends BFrame implements ActionListener {
 	JPanel pan_1 = new JPanel();
 	JTable table;
 	JScrollPane scpane;
-	ArrayList<BKBean> list; // DTO
-	BKBean bean;
+	ArrayList<BookBean> list; // DTO
+	BookBean bean;
 	DBMgr mgr = new DBMgr();
 	String col[] = { "title", "code", "price", "author", "publisher", "rent satus" };
 

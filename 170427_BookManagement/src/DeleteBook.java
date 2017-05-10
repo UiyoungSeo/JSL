@@ -21,7 +21,7 @@ public class DeleteBook extends BFrame implements ActionListener {
 	JButton btnCancel = new JButton("취소");
 
 	DBMgr mgr = new DBMgr();
-	ArrayList<BKBean> list;
+	ArrayList<BookBean> list;
 
 	public DeleteBook() {
 		Container container = this.getContentPane();

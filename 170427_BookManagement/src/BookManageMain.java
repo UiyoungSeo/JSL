@@ -8,10 +8,10 @@ import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class BookManageMain extends BFrame implements ActionListener {
-
 	ButtonGroup group = new ButtonGroup();
 	JButton btn1 = new JButton("도서 대어/반납");
 	JButton btn2 = new JButton("회원 등록/삭제");
@@ -56,7 +56,7 @@ public class BookManageMain extends BFrame implements ActionListener {
 		con.add(pan1, BorderLayout.PAGE_START);
 		con.add(pan, BorderLayout.PAGE_END);
 		
-		pack();	//팩으로 싼다. 
+		pack();	//팩으로 싸서 크기를 맞춘다. 
 	}
 
 	@Override
@@ -68,7 +68,12 @@ public class BookManageMain extends BFrame implements ActionListener {
 			new ManageMember();
 		}
 		else if(button.equals(btn3.getText())){
-			new InsertBook();
+			new MangeBook();
+		}else if(button.equals(btnExit.getText())){
+			int choice = JOptionPane.showConfirmDialog(null, "종료하시겠습니까?", "exit", JOptionPane.YES_NO_OPTION);
+
+			if (choice == JOptionPane.YES_OPTION)
+				System.exit(0);
 		}
 	}
 	

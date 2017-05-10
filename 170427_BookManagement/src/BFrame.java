@@ -4,7 +4,6 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 
 public class BFrame extends JFrame {
-
 	public BFrame() {
 		setSize(300, 200);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
