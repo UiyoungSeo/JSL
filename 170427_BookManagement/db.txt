@@ -17,3 +17,14 @@ lib_author VARCHAR(10),
 lib_publisher VARCHAR(10),
 lib_state VARCHAR(10)
 );
+
+
+/*member table*/
+CREATE TABLE `member` (
+	`no` INT(11) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(20) NOT NULL DEFAULT '0',
+	`phone` VARCHAR(20) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`no`)
+)
+ENGINE=InnoDB
+;
