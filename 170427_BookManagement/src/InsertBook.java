@@ -50,7 +50,7 @@ public class InsertBook extends BFrame implements ActionListener {
 		btn2.addActionListener(this);
 		btn3.addActionListener(this);
 		btn4.addActionListener(this);
-		btn5.addActionListener(this);	
+		btn5.addActionListener(this);
 		btnPanel.add(btn3);
 		btnPanel.add(btn);
 		btnPanel.add(btn1);
@@ -71,7 +71,7 @@ public class InsertBook extends BFrame implements ActionListener {
 		table = new JTable(record, col);
 		scrollPane = new JScrollPane(table);
 		JPanel panLine = new JPanel(new BorderLayout());
-		panLine.setBorder(new TitledBorder(new EtchedBorder(), "회원목록"));
+		panLine.setBorder(new TitledBorder(new EtchedBorder(), "도서목록"));
 		panLine.add(scrollPane, BorderLayout.CENTER);
 
 		container.add(btnPanel, BorderLayout.PAGE_START);
@@ -86,15 +86,16 @@ public class InsertBook extends BFrame implements ActionListener {
 			new InputBook();
 		} else if (e.getActionCommand().equals("검색")) {
 			new SearchBook();
+		} else if (e.getActionCommand().equals("수정")) {
+			new UpdateBook();
 		} else if (e.getActionCommand().equals("삭제")) {
 			new DeleteBook();
 		} else if (e.getActionCommand().equals("새로고침")) {
-			//dispose한후 다시 켠다.
+			// dispose한후 다시 켠다.
 			dispose();
 			new InsertBook();
 		} else if (e.getActionCommand().equals("돌아가기")) {
 			dispose();
-		} else if (e.getActionCommand().equals("수정")) {
 		}
 	}
 
