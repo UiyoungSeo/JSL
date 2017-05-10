@@ -11,7 +11,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.border.Border;
 
 public class RentBook extends BFrame implements ActionListener {
 	JLabel lbl = new JLabel("도서명");
@@ -105,6 +104,8 @@ public class RentBook extends BFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		if(e.getActionCommand().equals("돌아가기"))
+			dispose();
 	}
 
 	public static void main(String[] args) {
