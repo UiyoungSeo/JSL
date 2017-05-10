@@ -4,8 +4,6 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.naming.InitialContext;
-import javax.security.auth.login.Configuration;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -67,7 +65,7 @@ public class BookManageMain extends BFrame implements ActionListener {
 		if(button.equals(btn1.getText())){
 			new RentBook();
 		}else if(button.equals(btn2.getText())){
-			//TODO : 회원등록/삭제
+			new ManageMember();
 		}
 		else if(button.equals(btn3.getText())){
 			new InsertBook();
