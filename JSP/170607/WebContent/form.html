@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Examples</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Login</legend>
+		ID <input type="text" value="admin" name="id" placeholder="your id" readonly> <br>
+		PW <input type="password" name="password" placeholder="your pw" autofocus required> <br>
+		<input type="submit" value="send"> <input type="reset" value="reset">
+	</fieldset>
+
+	<fieldset>
+		<legend>Hobby</legend>
+		<input type="radio" name="hobby" value="1">Futball
+		<input type="radio" name="hobby" value="2">Music
+		<input type="radio" name="hobby" value="3">Game
+	</fieldset>
+
+	<fieldset>
+		<legend>Favourite Colour</legend>
+		<label><input type="checkbox" name="color" value="1">bleu</label>
+		<label><input type="checkbox" name="color" value="2">red</label>
+		<label><input type="checkbox" name="color" value="3">green</label>
+	</fieldset>
+
+	Choose Color<input type="color" name="" value=""><br>
+	Choose Date <input type="datetime-Local" name="" value=""><br>
+	Choose Time <input type="time" name="" value=""> ~ <input type="time" name="" value=""><br>
+	Choose Week <input type="week" name="" value=""><br>
+	Choose Month <input type="month" name="" value=""><br>
+	Choose File <input type="file" name="" value=""><br>
+	Choose Number <input type="number" name="" value="" min="0" max="100" step="5"><br>
+	<br>
+	<select name="a">
+		<optgroup label="Engineering">
+		<option value="1">Electronic Engineering</option>
+		<option value="2">Computer Engineering</option>
+		<option value="3">Software Engineering</option>
+		</optgroup>
+		<optgroup label="Language">
+		<option value="4">English</option>
+		<option value="5">Japanese</option>
+		<option value="6">French</option>
+		</optgroup>
+	</select>
+	<br>
+	<input type="text" list="OS">
+	<datalist id="OS">
+		<option value="linux">linux</option>
+		<option value="mac">mac</option>
+		<option value="windows">windows</option>
+	</datalist>
+	<br>
+	<textarea rows="7" cols="40"></textarea>
+
+	<br>
+	email <input type="email" name="" value="">
+</form>
+</body>
+</html>
