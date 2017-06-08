@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+p {
+	color: darkseagreen;
+	font-size: 20px;
+}
+
+.a {
+	font-size: 50px;
+	color: aquamarine;
+}
+
+.b {
+	color: aliceblue;
+}
+
+#aa {
+	color: bisque;
+}
+
+body {
+	background: #33332e;
+}
+
+ul{
+	color:whitesmoke;
+	list-style:square;
+}
+
+#container > ul{	/*container 바로 밑의 ul에만 적용된다.*/
+	border : 1px dotted white;
+}
+
+h1+ul{
+	color:#03a9f4;
+	font-weight:bold;
+}
+
+h2{
+	color:aquamarine;
+}
+
+p{
+	border:1px solid white;
+	padding:10px;
+	margin-top:10px;
+	margin-right:10px;
+	font-family:"consolas";
+}
+
+#paragraph1{
+	text-align:left;
+}
+#paragraph2{
+	text-align:right;
+}
+#paragraph3{
+	text-align:center;
+}
+#paragraph4{
+	text-align:justify;
+}
+
+h1{
+	color:wheat;
+}
+.shadow1{
+	text-shadow:1px 1px 3px #03a9f4;
+}
+.shadow2{
+	color : slategray;
+	text-shadow:3px -3px 5px #fff;
+}
+.shadow3{
+	color:#000;
+	text-shadow:0 0 4px #ccc,
+	0 -5px 4px #ff3,
+	2px -10px 6px #fd3,
+	-2px -15px 11px #f80,
+	2px -19px 18px #f20;
+}
