@@ -1,0 +1,23 @@
+div{
+    float:left;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    background:lightseagreen;
+    border: 1px solid black;
+}
+.content1{
+    border-radius:10px;
+}
+
+.content2{
+    border-radius:30px;
+}
+
+.border1{
+    border-top-left-radius: 100px 50px;
+}.border2{
+    border-bottom-right-radius: 50% 30%;
+}.border3{
+    border-top-right-radius: 50px;
+}

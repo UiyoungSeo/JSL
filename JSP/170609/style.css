@@ -1,0 +1,59 @@
+body{
+    background-color:#272b2b; 
+    color:wheat; 
+    background-image: url(chelsea.png);
+    background-repeat: no-repeat;
+    /*background-position-x: 50%;
+    background-position-y: 50%;
+    background-position: right bottom;*/
+    background-attachment: fixed;
+    background-position: bottom right;
+
+    /*background:linear-gradient(150deg,black,darkblue,skyblue);*/
+}
+p{
+    background-color: dimgray;   
+}
+.line1{
+    text-decoration:underline;
+}
+.line2{
+    text-decoration:overline;
+}
+.line3{
+    text-decoration:line-through;
+}
+.line4{
+    text-indent:20px; /*들여쓰기*/
+}
+.line5{
+    text-transform:capitalize;  /*첫 글자를 대문자로*/
+}
+.line6{
+    text-transform:uppercase;  
+}
+.line7{
+    text-transform:lowercase;  
+}
+.line8{
+    letter-spacing: 10px;   /*자간*/
+}
+.line9{
+    word-spacing: 10px;   /*단어와 단어사이 간격*/
+}
+.line10{
+    width:400px;
+    line-height:30px;   /*줄간격*/
+    overflow:hidden;
+}
+.line11{
+    width:400px;
+    line-height:30px;   /*줄간격*/
+    overflow:hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+ul{
+    list-style: circle;
+}

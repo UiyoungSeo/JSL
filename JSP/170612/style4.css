@@ -1,0 +1,38 @@
+*{
+    margin:0 auto;
+}
+
+body{
+    background-image: url(coffee-bean.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+
+.container{
+    width: 300px;
+    border: 1px solid black;
+    background:lightslategray;
+    color:wheat;
+    margin: 10px auto;
+    padding : 20px;
+    border-radius:10px;
+}
+
+.btn{
+    width:200px;
+    height: 100px;
+    margin: 50px;
+    background: blue;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#shadow1{
+    box-shadow : 10px 10px 5px 5px #665;
+}
+
+#shadow2{
+    box-shadow : 10px 10px 50px -1px white inset;
+}
+

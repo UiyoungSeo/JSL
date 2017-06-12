@@ -1,0 +1,20 @@
+body{
+    background: dimgray;
+    color:wheat;
+}
+
+p{
+    padding : 20px;
+    margin : 15px 5px;
+    border: 2px dotted white;
+}
+
+.size1{
+    width: 400px;
+    height: 50px;
+}
+
+.size2{
+    width: 50%;
+    height: 50%;
+}
