@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        #myball {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 2px solid black;
+            background: url(hazard.jpg) no-repeat center center padding-box;
+            background-size: 100%;
+            animation-name: myAni;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @-webkit-keyframes myAni {
+            0% {
+                left: 0%;
+            }
+            50% {
+                top: 200px;
+                background: url(hazard2.jpg) no-repeat center center;
+                background-size: 100%;
+            }
+            100% {
+                left: 90%;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            text-align: center;
+            background: #172389;
+            color: white;
+
+            animation-name: rint;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        #box > h1{
+            line-height: 200px;
+        }
+
+        @-webkit-keyframes rint {
+            from {
+                left: 0;
+                transform: rotate(0deg);
+            }
+            50%{
+                left: 90%;
+                 background: url(hazard2.jpg) no-repeat center center;
+                background-size: 100%;
+            }
+            to {
+                left: 500px;
+                transform: rotate(360deg);
+            }
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myball"></div>
+    <div id="box">
+        <h1>Chelsea</h1>
+    </div>
+</body>
+
+</html>

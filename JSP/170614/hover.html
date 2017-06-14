@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #hazard:hover {
+            transform-origin: left top;
+            transform: rotate(15deg);
+        }
+
+        #ex div {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            border-radius: 0px;
+            transition-property: background-color, border-radius;
+            transition-duration: 1s;
+        }
+
+        #ex:hover div {
+            background-color: lightseagreen;
+            border-radius: 50px;
+        }
+
+        #ex2 div {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: white;
+            background-color: #006aff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #ex2:hover div {
+            height: 400px;
+        }
+
+        #ex2 .ease {
+            transition: 3s ease;
+        }
+
+        #ex2 .linear {
+            transition: 3s linear;
+        }
+
+        #ex2 .ease-in {
+            transition: 3s ease-in;
+        }
+
+        #ex2 .ease-out {
+            transition: 3s ease-out;
+        }
+
+        #ex2 .ease-in-out {
+            transition: 3s ease-in-out;
+        }
+
+        #ex3 {
+            margin-top: 100px;
+        }
+
+        #ex3 div {
+            width: 100px;
+            height: 100px;
+            border-radius: 0px;
+            border: 2px solid black;
+            background: url(hazard.jpg) no-repeat center center padding-box;
+            background-size: 100%;
+            transition: all 1s ease-in 0.3s;
+        }
+
+        #ex3:hover div {
+            border-radius: 50px;
+            border: 2px solid lightblue;
+            background: url(hazard2.jpg) no-repeat center center padding-box;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <p>
+            <h4>mouse over</h4>
+        </p>
+        <div id="hazard">
+            <img src="hazard.jpg" alt="">
+        </div>
+
+        <div id="ex">
+            <div></div>
+        </div>
+
+        <div id="ex2">
+            <div class="ease">ease</div>
+            <div class="linear">linear</div>
+            <div class="ease-in">ease-in</div>
+            <div class="ease-out">ease-out</div>
+            <div class="ease-in-out">ease-in-out</div>
+        </div>
+
+        <div id="ex3">
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

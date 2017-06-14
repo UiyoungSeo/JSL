@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        img {
+            border: 1px solid black;
+        }
+
+        div #original {
+            margin-bottom: 50px;
+        }
+
+        div.div1 {
+            float: left;
+            margin: 10px;
+            width: 152px;
+            height: 192px;
+            background-color: rgba(0, 0, 255, 0.3);
+            perspective: 200px;
+            -webkit-perspective: 200px;
+            -moz-perspective: 200px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            -moz-transfotm-style: preserve-3d;
+        }
+
+        .translate-x img {
+            transform: translateX(-10px);
+        }
+
+        .translate-y img {
+            transform: translateY(20px);
+        }
+
+        .translate-z img {
+            transform: translateZ(40px);
+        }
+
+        .translate-xyz img {
+            transform: translate3d(10px, 20px, 10px);
+        }
+
+        .scale-x img {
+            transform: scaleX(1.2);
+        }
+
+        .scale-y img {
+            transform: scale(1.5);
+        }
+
+        .scale-z img {
+            transform: scaleZ(0, 7);
+        }
+
+        .scalexyz img {
+            transform: scale3d(1.2, 1.5, 0.7);
+        }
+
+        .rotate-x img {
+            transform: rotateX(45deg);
+        }
+
+        .rotate-y img {
+            transform: rotateY(45deg);
+        }
+
+        .rotate-z img {
+            transform: rotateZ(45deg);
+        }
+
+        .rotate-xyz img {
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+        }
+
+        .skew-x img {
+            transform: skewX(30deg);
+        }
+
+        .skew-y img {
+            transform: skewY(15deg);
+        }
+
+        .skew img {
+            transform: skew(-25deg, -15deg);
+        }
+
+        .ex img{
+            transform : rotateZ(10deg);
+        }
+
+        .ltop img{
+            transform-origin:left top;
+        }
+        
+        .rtop img{
+            transform-origin:right top;
+        }
+
+        .lbt img{
+            transform-origin: left bottom;
+        }
+
+        .rbt img{
+            transform-origin : right bottom;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="original">
+            <h4>Original Image</h4>
+            <img src="hazard.jpg" alt="">
+        </div>
+        <h4>Transformed Images</h4>
+        <div class="div1">
+            <div class="translate-x"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="translate-y"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="translate-z"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="translate-xyz"><img src="hazard.jpg" alt=""></div>
+        </div>
+
+        <div class="div1">
+            <div class="scale-x"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="scale-y"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="scale-z"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="scale-xyz"><img src="hazard.jpg" alt=""></div>
+        </div>
+
+        <div class="div1">
+            <div class="rotate-x"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="rotate-y"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="rotate-z"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="rotate-3d"><img src="hazard.jpg" alt=""></div>
+        </div>
+
+        <div class="div1">
+            <div class="skew-x"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="div1">
+            <div class="skew-y"><img src="hazard.jpg" alt=""></div>
+        </div>
+
+        <div class="div1">
+            <div class="skew"><img src="hazard.jpg" alt=""></div>
+        </div>
+
+        <div class="ex">
+            <div class="ltop"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="ex">
+            <div class="rtop"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="ex">
+            <div class="lbt"><img src="hazard.jpg" alt=""></div>
+        </div>
+        <div class="ex">
+            <div class="rbt"><img src="hazard.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
