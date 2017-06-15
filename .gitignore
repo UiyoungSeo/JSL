@@ -4,6 +4,7 @@
 /bin/
 target/
 Test
+Servers
 
 # OS Files #
 .DS_Store
