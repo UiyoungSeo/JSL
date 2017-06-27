@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="170602-HelloJSP" path="/170602-HelloJSP" reloadable="true" source="org.eclipse.jst.jee.server:170602-HelloJSP"/><Context docBase="170607" path="/170607" reloadable="true" source="org.eclipse.jst.jee.server:170607"/><Context docBase="170608" path="/170608" reloadable="true" source="org.eclipse.jst.jee.server:170608"/><Context docBase="170615" path="/170615" reloadable="true" source="org.eclipse.jst.jee.server:170615"/></Host>
+      <Context docBase="170602-HelloJSP" path="/170602-HelloJSP" reloadable="true" source="org.eclipse.jst.jee.server:170602-HelloJSP"/><Context docBase="170607" path="/170607" reloadable="true" source="org.eclipse.jst.jee.server:170607"/><Context docBase="170608" path="/170608" reloadable="true" source="org.eclipse.jst.jee.server:170608"/><Context docBase="170615" path="/170615" reloadable="true" source="org.eclipse.jst.jee.server:170615"/><Context docBase="Test" path="/Test" reloadable="true" source="org.eclipse.jst.jee.server:Test"/><Context docBase="170627" path="/170627" reloadable="true" source="org.eclipse.jst.jee.server:170627"/></Host>
     </Engine>
   </Service>
 </Server>
