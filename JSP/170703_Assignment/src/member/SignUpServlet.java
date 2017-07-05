@@ -53,9 +53,9 @@ public class SignUpServlet extends HttpServlet {
 
 		String email = request.getParameter("email");
 		if (request.getParameter("email_service").equals("")) {
-			email += "@" + request.getParameter("email_service");
-		} else {
 			email += "@" + request.getParameter("email_service_select");
+		} else {
+			email += "@" + request.getParameter("email_service");
 		}
 		out.println("<br>이 메 일 : ");
 		out.print(email);
