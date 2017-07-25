@@ -110,12 +110,10 @@
 				<Context docBase="170707" path="/170707" reloadable="true" source="org.eclipse.jst.jee.server:170707"/>
 				<Context docBase="170707_Assignment" path="/170707_Assignment" reloadable="true" source="org.eclipse.jst.jee.server:170707_Assignment"/>
 				<Context docBase="170712" path="/170712" reloadable="true" source="org.eclipse.jst.jee.server:170712"/>
-				<Context docBase="web-study-09-2" path="/web-study-09-2" reloadable="true" source="org.eclipse.jst.jee.server:web-study-09-2">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/orcl" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:orcl" username="scott"/>
-				</Context>
+				
 				
 
-			<Context docBase="170725" path="/170725" reloadable="true" source="org.eclipse.jst.jee.server:170725"/><Context docBase="170718_MemberManageSystem" path="/170718_MemberManageSystem" reloadable="true" source="org.eclipse.jst.jee.server:170718_MemberManageSystem"/></Host>
+			<Context docBase="170725" path="/170725" reloadable="true" source="org.eclipse.jst.jee.server:170725"/><Context docBase="170718_MemberManageSystem" path="/170718_MemberManageSystem" reloadable="true" source="org.eclipse.jst.jee.server:170718_MemberManageSystem"/><Context docBase="170712" path="/170712" reloadable="true" source="org.eclipse.jst.jee.server:170712"/></Host>
 		</Engine>
 	</Service>
 </Server>

@@ -13,9 +13,9 @@
 <body>
 	<h4>디비 연동</h4>
 	<%
-		Context initContext = new InitialContext(1);
+		Context initContext = new InitialContext();
 		Context envContext = (Context) initContext.lookup("java:/comp/env");
-		DataSource ds = (DataSource) envContext.lookup("jdbc/myoracle");
+		DataSource ds = (DataSource) envContext.lookup("jdbc/orcl");
 		Connection conn = ds.getConnection();
 		out.println("DBCP 연동 성공");
 	%>
