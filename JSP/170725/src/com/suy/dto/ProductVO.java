@@ -5,9 +5,9 @@ public class ProductVO {
 	private String name;
 	private Integer price;
 	private String description;
-	private String pictureurl;
+	private String pictureUrl;
 
-	// Getters and Setters
+	// getters and setters
 	public Integer getCode() {
 		return code;
 	}
@@ -40,11 +40,12 @@ public class ProductVO {
 		this.description = description;
 	}
 
-	public String getPictureurl() {
-		return pictureurl;
+	public String getPictureUrl() {
+		return pictureUrl;
 	}
 
-	public void setPictureurl(String pictureurl) {
-		this.pictureurl = pictureurl;
+	public void setPictureUrl(String pictureUrl) {
+		this.pictureUrl = pictureUrl;
 	}
+
 }
