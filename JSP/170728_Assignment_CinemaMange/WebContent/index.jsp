@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="movieList.do">Movie Manage System</a>
+	<% response.sendRedirect("movieList.do"); %>
 </body>
 </html>
