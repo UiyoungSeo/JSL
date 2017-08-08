@@ -10,6 +10,8 @@
 </head>
 <body>
 	<!--% response.sendRedirect("member/signIn.jsp"); %-->
-	<a href="member/signIn.jsp">ff</a>
+	<script>
+		location.href="member/signIn.jsp";
+	</script>
 </body>
 </html>

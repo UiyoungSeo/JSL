@@ -13,11 +13,8 @@ create table member(
     pwd        varchar2(20),     
     name       varchar2(40),
     email      varchar2(40),
-    zip_num    varchar2(7),
     address    varchar2(100),
     phone      varchar2(20),
-    useyn      char(1)       default 'y',
-    indate     date          default sysdate
 );
 
 alter table product drop primary key cascade;

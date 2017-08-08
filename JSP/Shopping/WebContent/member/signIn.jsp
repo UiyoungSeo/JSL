@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -7,8 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
 
@@ -19,8 +17,7 @@
 	crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
 </head>
@@ -139,10 +136,8 @@ body {
 	border-color: #1CA347;
 }
 </style>
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
 	$(function() {
 		$('#login-form-link').click(function(e) {
@@ -180,27 +175,24 @@ body {
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-								<form id="login-form" action="#" method="post" role="form"
-									style="display: block;">
+								<form id="login-form" action="#" method="post" role="form" style="display: block;">
 									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1"
-											class="form-control" placeholder="username" value="">
+										<input type="text" name="user name" id="username" tabindex="1" class="form-control"
+											placeholder="username" value="">
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password"
-											tabindex="2" class="form-control" placeholder="password">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control"
+											placeholder="password">
 									</div>
 									<div class="form-group text-center">
-										<input type="checkbox" tabindex="3" class="" name="remember"
-											id="remember"> <label for="remember">
-											Remember Me</label>
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
 									</div>
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
-												<input type="submit" name="login-submit" id="login-submit"
-													tabindex="4" class="form-control btn btn-login"
-													value="Log In">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4"
+													class="form-control btn btn-login" value="Log In">
 											</div>
 										</div>
 									</div>
@@ -208,38 +200,43 @@ body {
 										<div class="row">
 											<div class="col-lg-12">
 												<div class="text-center">
-													<a href="https://phpoll.com/recover" tabindex="5"
-														class="forgot-password">Forgot Password?</a>
+													<a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot
+														Password?</a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</form>
-								<form id="register-form"
-									action="https://phpoll.com/register/process" method="post"
-									role="form" style="display: none;">
+								<form id="register-form" action="ShoppingServlet?command=register" method="post" role="form"
+									style="display: none;">
 									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1"
-											class="form-control" placeholder="Username" value="">
+										<input type="text" name="userID" id="userID" tabindex="1" class="form-control"
+											placeholder="user id" value="">
 									</div>
 									<div class="form-group">
-										<input type="email" name="email" id="email" tabindex="1"
-											class="form-control" placeholder="Email Address" value="">
+										<input type="email" name="email" id="email" tabindex="1" class="form-control"
+											placeholder="email address" value="">
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password"
-											tabindex="2" class="form-control" placeholder="Password">
+										<input type="text" name="address" id="address" tabindex="1" class="form-control"
+											placeholder="address" value="">
 									</div>
 									<div class="form-group">
-										<input type="password" name="confirm-password"
-											id="confirm-password" tabindex="2" class="form-control"
-											placeholder="Confirm Password">
+										<input type="text" name="phone" id="phone" tabindex="1" class="form-control"
+											placeholder="phone" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control"
+											placeholder="password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" id="confirm-password" tabindex="2"
+											class="form-control" placeholder="confirm password">
 									</div>
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
-												<input type="submit" name="register-submit"
-													id="register-submit" tabindex="4"
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4"
 													class="form-control btn btn-register" value="Register Now">
 											</div>
 										</div>
