@@ -9,12 +9,12 @@ create table worker(
 alter table member drop primary key cascade;
 drop table member;
 create table member(   
-    id         varchar2(20)  primary key,
+    id		   varchar2(20)  primary key,
     pwd        varchar2(20),     
     name       varchar2(40),
     email      varchar2(40),
     address    varchar2(100),
-    phone      varchar2(20),
+    phone      varchar2(20)
 );
 
 alter table product drop primary key cascade;

@@ -9,9 +9,6 @@
 
 </head>
 <body>
-	<!--% response.sendRedirect("member/signIn.jsp"); %-->
-	<script>
-		location.href="member/signIn.jsp";
-	</script>
+	<% response.sendRedirect("http://localhost:8080/Shopping/ShoppingServlet?command=signIn"); %>
 </body>
 </html>
