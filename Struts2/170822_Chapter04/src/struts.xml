@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="ch04" extends="struts-default">
+		<action name="HelloWorld02" class="action.HelloWorld02">
+			<interceptor-ref name="params" />
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+
+		<action name="UserRegForm">
+			<result>/jsp/userRegForm.jsp</result>
+		</action>
+
+		<action name="UserRegAction" class="action.UserRegAction">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="workflow" />
+			<result name="input">/jsp/userRegForm.jsp</result>
+			<result name="success">/jsp/userRegSuccess.jsp</result>
+		</action>
+		
+		<action name="UserRegForm2">
+			<result>/jsp/userRegForm2.jsp</result>
+		</action>
+		<action name="UserRegAction2" class="action.UserRegAction2">
+			<interceptor-ref name="params"/>
+			<result name="success">/jsp/userRegSuccess2.jsp</result>
+		</action>
+	</package>
+</struts>

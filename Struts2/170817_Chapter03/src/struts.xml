@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<include file="struts-01.xml" />
+	<include file="struts-02.xml" />
+	<include file="struts-03.xml" />
+	<include file="testDir/struts-04.xml" />
+	<include file="testDir/struts-05.xml" />
+
+	<!-- 사용자정의 namespace -->
+	<!-- localhost:8080/170817_Chapter03/tutorial06/HelloWorld.action -->
+	<package name="tutorial06" namespace="/tutorial06" extends="struts-default">
+		<action name="HelloWorld" class="tutorial.HelloWorld01">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+
+	<!-- default namespace -->
+	<!-- localhost:8080/170817_Chapter03/notfound/HelloWorld.action -->
+	<package name="tutorial07" namespace="" extends="struts-default">
+		<action name="HelloWorld" class="tutorial.HelloWorld02">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+
+	<!-- root namespace -->
+	<!-- localhost:8080/170817_Chapter03/HelloWorld.action -->
+	<package name="tutorial08" namespace="/" extends="struts-default">
+		<action name="HelloWorld" class="tutorial.HelloWorld03">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+
+	<package name="tutorial11" extends="struts-default">
+		<action name="TestWorld" class="tutorial.TestWorld" method="test">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+
+	<!-- default action -->
+	<package name="tutorial12" namespace="/" extends="struts-default">
+		<default-action-ref name="DefaultAction" />
+		<action name="DefaultAction" class="tutorial.DefaultAction">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+
+	<!-- wildcard mapping -->
+	<package name="wildcard" namespace="/wildcard" extends="struts-default">
+		<action name="HelloWorl*" class="tutorial.HelloWorld{1}">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+		
+		<action name="*!*" class="tutorial.{1}" method="{2}">
+			<result name="success">/helloWorld.jsp</result>
+		</action>
+	</package>
+	
+	
+</struts>
