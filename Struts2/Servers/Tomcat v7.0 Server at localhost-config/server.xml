@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="170816_HelloStruts" path="/170816_HelloStruts" reloadable="true" source="org.eclipse.jst.jee.server:170816_HelloStruts"/><Context docBase="struts2-blank-2.0.14" path="/struts2-blank-2.0.14" reloadable="true" source="org.eclipse.jst.j2ee.server:struts2-blank-2.0.14"/><Context docBase="170817_Chapter03" path="/170817_Chapter03" reloadable="true" source="org.eclipse.jst.jee.server:170817_Chapter03"/><Context docBase="bbs2" path="/bbs2" reloadable="true" source="org.eclipse.jst.jee.server:bbs2"/><Context docBase="170822_Chapter04" path="/170822_Chapter04" reloadable="true" source="org.eclipse.jst.jee.server:170822_Chapter04"/><Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="170831_Chapter05" path="/170831_Chapter05" reloadable="true" source="org.eclipse.jst.jee.server:170831_Chapter05"/></Host>
+      <Context docBase="170901_Chapter06" path="/170901_Chapter06" reloadable="true" source="org.eclipse.jst.jee.server:170901_Chapter06"/></Host>
     </Engine>
   </Service>
 </Server>
