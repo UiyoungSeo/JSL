@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="login" extends="struts-default">
+		<action name="Login*" class="action.Login">
+			<result>/jsp/Login{1}.jsp</result>
+			<result name="input">/jsp/Login{1}.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ch07" namespace="/ch07" extends="struts-default">
+		<action name="IfTestAction" class="action.IfTestAction">
+			<result>/jsp/ifTest.jsp</result>
+		</action>
+		
+		<action name="IteratorAction" class="action.IteratorAction">
+			<result>/jsp/iteratorTest.jsp</result>
+		</action>
+		
+		<action name="AppendAction" class="action.IteratorAction">
+			<result>/jsp/appendTest.jsp</result>
+		</action>
+		
+		<action name="MergeAction" class="action.IteratorAction">
+			<result>/jsp/mergeTest.jsp</result>
+		</action>
+	</package>
+
+	<package name="urlTest" namespace="/urlTest" extends="struts-default">
+		<action name="*!*" class="action.{1}" method="{2}">
+			<result>/jsp/iteratorTest.jsp</result>
+		</action>
+		
+		<action name="IteratorAction" class="action.IteratorAction">
+			<result>/jsp/iteratorTest.jsp</result>
+		</action>
+		
+		<action name="Login2" class="action.Login">
+			<result>/jsp/Login2.jsp</result>
+			<result name="input">/jsp/Login2.jsp</result>
+		</action>
+	</package>
+</struts>
