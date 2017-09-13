@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<package name="ch08" extends="struts-default">
+		<action name="UserRegForm">
+		<result>/jsp/userRegForm.jsp</result>
+		</action>
+		
+		<action name="UserRegAction" class="action.UserRegAction">
+			<result name="input">/jsp/userRegForm.jsp</result>
+			<result name="success">/jsp/userRegSuccess.jsp</result>
+		</action>
+	</package>
+</struts>

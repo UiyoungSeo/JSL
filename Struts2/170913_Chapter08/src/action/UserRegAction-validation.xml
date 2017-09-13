@@ -1,0 +1,44 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-config-1.0.2.dtd">
+<validators>
+	<field name="userId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>아이디를 입력해주세요.</message>
+		</field-validator>
+	</field>
+
+	<field name="userPW">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>비밀번호를 입력해주세요.</message>
+		</field-validator>
+	</field>
+
+	<field name="userName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>이름을 입력해주세요.</message>
+		</field-validator>
+	</field>
+
+	<field name="userAge">
+		<field-validator type="required">
+			<message>나이를 입력해주세요.</message>
+		</field-validator>
+		<field-validator type="int">
+			<param name="min">20</param>
+			<param name="max">60</param>
+			<message>${min}~${max}세까지 가능합니다.</message>
+		</field-validator>
+	</field>
+
+	<field name="userEmail">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>이메일을 입력해주세요</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>이메일 형식이 아닙니다.</message>
+		</field-validator>
+	</field>
+</validators>
