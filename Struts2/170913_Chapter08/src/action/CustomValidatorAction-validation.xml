@@ -1,0 +1,11 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+<field name="customValidator">
+  <field-validator type="jumincode">
+  <message>
+  <![CDATA[ 주민번호는 "6자리 숫자-7자리 숫자"로 입력되어야 합니다. ]]>
+  </message>
+  </field-validator>
+</field>
+</validators>

@@ -1,0 +1,42 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+  <field name="requiredValidator">
+    <field-validator type="required">
+      <message><![CDATA[ 반드시 입력해야 합니다. ]]></message>
+    </field-validator>
+  </field> 
+
+  <field name="fieldExpressionValidator">
+    <field-validator type="fieldexpression">
+      <param name="expression">
+        (fieldExpressionValidator == requiredValidator)
+      </param>
+      <message>
+        <![CDATA[ requiredValidator와 같은 값이어야 합니다. ]]>
+      </message>
+    </field-validator>
+  </field>
+ 
+  <field name="urlValidator">
+    <field-validator type="url">
+      <message><![CDATA[ URL 형식이어야 합니다. ]]></message>
+    </field-validator>
+  </field>
+  
+  <field name="stringLengthValidator">
+    <field-validator type="stringlength">
+      <param name="minLength">4</param>
+      <param name="maxLength">8</param>
+      <param name="trim">true</param>
+      <message><![CDATA[ 문자열 길이가 4이상 8이하여야 합니다. ]]></message>
+    </field-validator>
+  </field>
+  
+  <field name="regexValidator">
+    <field-validator type="regex">
+      <param name="expression">.*\.txt</param>
+      <message><![CDATA[ 파일의 확장자가 txt 형식이어야 합니다. ]]></message>
+    </field-validator>
+  </field>
+</validators>
