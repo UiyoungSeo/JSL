@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.multipart.maxSize" value="104857600" />
+
+	<package name="ch09" extends="struts-default">
+		<action name="FileUploadForm" class="file.FileUploadAction">
+			<result>/jsp/fileUpload.jsp</result>
+		</action>
+
+		<action name="FileUploadAction" class="file.FileUploadAction">
+			<result name="input">/jsp/fileUpload.jsp</result>
+			<result>/jsp/fileUploadOK.jsp</result>
+		</action>
+
+		<action name="MultiUploadListForm">
+			<result>/jsp/multiUploadList.jsp</result>
+		</action>
+		<action name="MultiUploadListAction" class="file.MultiUploadListAction">
+			<result>/jsp/multiUploadListOK.jsp</result>
+		</action>
+	</package>
+</struts>
