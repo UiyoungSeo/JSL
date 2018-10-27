@@ -9,6 +9,7 @@ Days in JSL
     - [ScoreManagement](https://github.com/uiyoung/JSL/tree/master/JAVA/170424_ScoreManagement)
     - [PhoneBook](https://github.com/uiyoung/JSL/tree/master/JAVA/170517_PhonBookByHashMap/src)
     - [Socket1](https://github.com/uiyoung/JSL/tree/master/JAVA/170525_Socket/src), [Socket2](https://github.com/uiyoung/JSL/tree/master/JAVA/170526_Socket/src)
+    - Java Team Project : [Cinema](https://github.com/uiyoung/Cinema)
 2. [JSP](https://github.com/UiyoungSeo/JSL/tree/master/JSP)
     - [Member Manage System](MemberManageSystem)
     - [Cinema Manage](https://github.com/uiyoung/JSL/tree/master/JSP/170728_Assignment_CinemaManage)
